@@ -62,7 +62,7 @@ or
 python3 ./(cloned dir)/FreezeDryTest/out_graph.py ./import/0000.csv 60
 ```
 
-![230207_1min](https://user-images.githubusercontent.com/47661559/217153483-3f0685ae-dc6b-4e9e-8c31-9cd35c0a3bc7.jpg)
+![0000_1min_20231106](https://github.com/keymar0725/FreezeDryTest/assets/47661559/40cfcc84-b949-44ac-a989-6001982e6386)
 
 # Author
 
