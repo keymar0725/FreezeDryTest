@@ -46,7 +46,7 @@ print("Output Name: {0}".format(out_name))
 
 ######
 
-col_name = range(1,11,1)
+col_name = range(1,10,1)
 df = pd.read_csv(import_file,
                   names = col_name,
                   encoding="shift-jis",
@@ -54,17 +54,17 @@ df = pd.read_csv(import_file,
                   dtype="object")
 
 ###filter DataFrame
-header_num = int(df.iloc[0,2])
+header_num = int(df.iloc[0,1])
 _df = df[header_num:]
-_df = _df.drop([1,2,3], axis=1)
+_df = _df.drop([1,2], axis=1)
 _df = _df.dropna(how='all', axis=1)
 _df = _df.dropna(how='any')
-for i in range(4,7):
+for i in range(3,6):
     _df = _df[_df[i]!="BURNOUT"]
 
 _df = _df[1:].astype(float)   # convert float
 
-for i in range(4,7):
+for i in range(3,6):
     _df = _df[_df[i]<=100]   # 100℃以下
 
 row, col = _df.shape
@@ -72,7 +72,7 @@ for j in range(5,7):
     for i in range(0,row):
         _df.iloc[i,j] = 10**(_df.iloc[i,j] - 3)
 
-for i in range(9,11):
+for i in range(8,10):
     _df = _df[_df[i]<=200]   # 200Pa以下
 
 ###
