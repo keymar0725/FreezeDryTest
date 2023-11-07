@@ -64,7 +64,7 @@ or
 python3 ./(cloned dir)/FreezeDryTest/out_graph.py ./import/sasami.csv 60
 ```
 
-![0000_1min_20231106](https://github.com/keymar0725/FreezeDryTest/assets/47661559/40cfcc84-b949-44ac-a989-6001982e6386)
+![sasami_1min_20231107](https://github.com/keymar0725/FreezeDryTest/assets/47661559/b2789204-2ee2-4a92-8330-00cddcb661df)
 
 # Author
 
