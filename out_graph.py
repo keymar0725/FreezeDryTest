@@ -113,11 +113,12 @@ ax2 = ax1.twinx()
 ax1.set_title('FD Test: {}'.format(out_name),fontsize=18)
 ax1.set_xlabel('Time [min]')
 ax1.set_ylabel('Temparature [℃]')
-ax2.set_ylabel('Vaccum Degree [Pa]')
+ax2.set_ylabel('Vacuum Degree [Pa]')
 ax1.set_xlim([0,len(ch1)])
 ax1.set_xticks(np.arange(0,len(ch1),step=240))
 ax1.set_ylim([-40, 90])
-ax2.set_ylim([50, 120])
+ax2.set_ylim([50, 115])
+ax1.grid(which = "major", axis = "y", color = "gray", alpha = 0.5, linestyle = ":", linewidth = 0.5)
 
 
 for ch, names, col in zip(ch_temp, ch_names_temp, col_temp):
