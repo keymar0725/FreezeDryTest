@@ -107,6 +107,7 @@ for ch, j in zip(ch_vd, range(5,7)):
         a = _df.iloc[i,j]
         ch.append(a)
 
+# Graph Setup
 fig = plt.figure(figsize=(12, 7), dpi=300)
 ax1 = fig.add_subplot()
 ax2 = ax1.twinx()
