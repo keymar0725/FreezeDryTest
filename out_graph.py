@@ -118,7 +118,7 @@ ax2.set_ylabel('Vacuum Degree [Pa]')
 ax1.set_xlim([0,len(ch1)])
 ax1.set_xticks(np.arange(0,len(ch1),step=240))
 ax1.set_ylim([-40, 90])
-ax2.set_ylim([50, 115])
+ax2.set_ylim([30, 95])
 ax1.grid(which = "major", axis = "y", color = "gray", alpha = 0.5, linestyle = ":", linewidth = 0.5)
 
 
