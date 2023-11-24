@@ -19,6 +19,10 @@ os.makedirs(out_dir, exist_ok=True)
 # Argument
 import_file = sys.argv[1]       # csv file
 plt_pitch = int(sys.argv[2])    # plot pitch
+temp_lim1 = int(sys.argv[3])    # temp minimum
+temp_lim2 = int(sys.argv[4])    # temp maximum
+pa_lim1 = int(sys.argv[5])      # vaccum minimum
+pa_lim2 = int(sys.argv[6])      # vaccum maximum
 
 if plt_pitch!=1 and plt_pitch%60!=0:
     sys.exit("Error!:Plot Pitch")
@@ -117,8 +121,8 @@ ax1.set_ylabel('Temparature [℃]')
 ax2.set_ylabel('Vacuum Degree [Pa]')
 ax1.set_xlim([0,len(ch1)])
 ax1.set_xticks(np.arange(0,len(ch1),step=240))
-ax1.set_ylim([-40, 90])
-ax2.set_ylim([30, 95])
+ax1.set_ylim([temp_lim1, temp_lim2])
+ax2.set_ylim([pa_lim1, pa_lim2])
 ax1.grid(which = "major", axis = "y", color = "gray", alpha = 0.5, linestyle = ":", linewidth = 0.5)
 
 

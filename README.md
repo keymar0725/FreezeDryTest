@@ -6,7 +6,7 @@ KEYENCE 計測ソフトより生成したcsvファイルを読み込み、指定
 また、以下の機能も実装している。
 * センサー未接続状態（"BURNOUT"）をフィルタリング
 * プロットピッチを指定し、グラフの解像度を変化させることが可能
-* グラフ縦軸表示領域は、1軸：-40℃～90℃、2軸：30～95Pa
+* グラフ縦軸表示領域は、引数により決定
 * センサー温度100℃以上および真空度200Pa以上はフィルタリング
 * 出力名は「(csvファイル名)\_(プロットピッチ)\_(出力日).jpg」
 
@@ -38,19 +38,21 @@ make image of graph.
 
 ```bash
 cd FreezeDryTest
-python3 out_graph.py argv1 argv2
+python3 out_graph.py argv1 argv2 argv3 argv4 argv5 argv6
 ```
 
 or
 
 ```bash
-python3 ./(cloned dir)/FreezeDryTest/out_graph.py argv1 argv2
+python3 ./(cloned dir)/FreezeDryTest/out_graph.py argv1 argv2 argv3 argv4 argv5 argv6
 ```
 
 スクリプト実行に必要な引数は以下の二つである。
 * argv1: Path to csv file (csvファイルへのパス。相対・絶対問わず)
 * argv2: Plot pitch (グラフに記録する点のピッチ、csvファイルのデフォルトは1秒/ピッチである)
     ex)1sec = 1, 1min = 60, 30min = 1800, 1hour = 3600
+* argv3,4: minimum temparature / maximum temparature (温度の表示領域)
+* argv5,6: minimum vaccum degree / maximum vaccum degree (圧力の表示領域)
 
 # Example
 
