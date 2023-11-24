@@ -57,13 +57,13 @@ python3 ./(cloned dir)/FreezeDryTest/out_graph.py argv1 argv2 argv3 argv4 argv5 
 # Example
 
 ```bash
-python out_graph.py ./import/sasami.csv 60
+python out_graph.py ./import/sasami.csv 60 -40 90 50 115
 ```
 
 or
 
 ```bash
-python3 ./(cloned dir)/FreezeDryTest/out_graph.py ./import/sasami.csv 60
+python3 ./(cloned dir)/FreezeDryTest/out_graph.py ./import/sasami.csv 60 -40 90 50 115
 ```
 
 ![sasami_1min_20231107](https://github.com/keymar0725/FreezeDryTest/assets/47661559/b2789204-2ee2-4a92-8330-00cddcb661df)
